@@ -1,3 +1,7 @@
+---
+layout: default
+title: Welcome Students
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +16,14 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            background-attachment: fixed; /* Ensure the background image covers the page */
+            background-attachment: fixed;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden;
         }
 
         h2 {
@@ -30,17 +34,17 @@
             font-family: cursive;
             font-size: 22px;
             opacity: 0;
-            animation: fadeIn 2s forwards 1s; /* Fade in effect */
+            animation: fadeIn 2s forwards 1s;
         }
 
         h1 {
             text-align: center;
             margin: 80px 10px;
             font-size: 36px;
-            animation: fadeInUp 2s forwards; /* Slide up and fade in effect */
+            animation: fadeInUp 2s forwards;
             opacity: 0;
-            position: relative; /* Ensure it's in the normal flow */
-            z-index: 10; /* Bring it above other elements */
+            position: relative;
+            z-index: 10;
         }
 
         @keyframes fadeIn {
@@ -100,11 +104,11 @@
             transition: transform 0.4s ease, box-shadow 0.4s ease;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            animation: slideIn 0.6s ease-out; /* Slide in animation */
+            animation: slideIn 0.6s ease-out;
         }
 
         .subject-box:hover {
-            transform: scale(1.1) rotate(2deg); /* Slight rotation on hover */
+            transform: scale(1.1) rotate(2deg);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
@@ -113,14 +117,13 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Instagram Link Styles */
         .instagram-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
             opacity: 0;
-            animation: fadeInUp 2s forwards 1s; /* Fade in effect with delay */
+            animation: fadeInUp 2s forwards 1s;
         }
 
         .instagram-icon {
@@ -146,7 +149,6 @@
             margin-bottom: 10px;
         }
 
-        /* Media Query for Mobile Devices */
         @media (max-width: 600px) {
             .subject-box {
                 font-size: 14px;
